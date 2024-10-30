@@ -1,5 +1,10 @@
-import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import "@/app/ui/global.css";
+import { Inter } from "next/font/google";
+import Navbar from "@/app/components/navbar";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -8,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={'${inter.ClassName} antialoased'}>{children}</body>
+      <body className={"${inter.ClassName} antialoased"}>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
