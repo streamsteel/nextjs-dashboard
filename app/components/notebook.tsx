@@ -29,7 +29,7 @@ const Notebook = () => {
     <textarea
       ref={textAreaRef}
       onChange={handleInput}
-      className="h-full w-full resize-none border-none outline-none p-2 box-border text-base leading-loose ${inter.ClassName}"
+      className={`h-full w-4/5 resize-none border-none outline-none box-border p-2 text-base leading-loose ${inter.className}`}
       placeholder="Start typing your notes here..."
     />
   );
