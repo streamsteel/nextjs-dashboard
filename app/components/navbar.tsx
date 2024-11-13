@@ -41,14 +41,14 @@ const Navbar = () => {
         <>
           {/* 遮罩层 */}
           <div 
-            className="fixed inset-0 z-10 opacity-50" 
+            className="fixed inset-0 z-10 bg-slate-500 opacity-50" 
             onClick={closeMenu}
           ></div>
 
           {/* 菜单 */}
-          <div className="fixed left-0 w-64 h-screen bg-gray-700 text-white p-4 z-20">
+          <div className="fixed left-0 w-64 h-screen bg-gray-700 duration-500 text-white p-4 z-20">ß
             <NavLinks />
-          </div>
+          </div>∂
         </>
       )}
     </div>
